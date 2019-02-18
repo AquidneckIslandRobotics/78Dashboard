@@ -48,7 +48,7 @@ function setLogin() {
   address.disabled = connect.disabled = false;
   connect.textContent = 'Connect';
   // Add the default address and select xxxx
-  address.value = 'roborio-xxxx-frc.local';
+  address.value = 'roborio-78-frc.local';
   address.focus();
   address.setSelectionRange(8, 12);
 }
@@ -58,6 +58,7 @@ connect.onclick = () => {
   address.disabled = connect.disabled = true;
   connect.textContent = 'Connecting...';
 };
+
 address.onkeydown = ev => {
   if (ev.key === 'Enter') {
     connect.click();

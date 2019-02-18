@@ -71,12 +71,32 @@ header {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 50vw;
+    width: 40%;    /*Percent of viewport*/
     height: 80vh;
     overflow: hidden;
     background-color: #333;
     /* You'll need to mess with this a bit to get your camera to work. Replace the url with a live-updating image feed from your camera. Using other camera streaming systems will require some tweaking. */
-    /*background-image: url('LINK TO CAMERA SOURCE HERE');*/
+    background-image: url('http://10.0.78.78:1182');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+    text-align: center;
+}
+#camera2 {
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    width: 40%;    /*Percent of viewport*/
+    height: 80vh;
+    overflow: hidden;
+    background-color: rgb(155, 12, 12);
+    /* You'll need to mess with this a bit to get your camera to work. Replace the url with a live-updating image feed from your camera. Using other camera streaming systems will require some tweaking. */
+    background-image: url('http://10.0.78.78:1181');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain;
+    text-align: center;
 }
 article {
     top: 0;
@@ -130,7 +150,7 @@ text {
 aside {
     right: 0;
     top: 0;
-    width: 15vw;
+    width: 20vw;
     height: 100vh;
 }
 aside > * {
@@ -159,4 +179,7 @@ body.login #login {
 }
 #login > button {
     margin-left: 5px;
+}
+h1 {
+  text-align: center;
 }
