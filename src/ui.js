@@ -65,7 +65,7 @@ NetworkTables.addKeyListener('/robot/time', (key, value) => {
 });
 
 // Load list of prewritten autonomous modes
-NetworkTables.addKeyListener('/SmartDashboard/autonomous/modes', (key, value) => {
+NetworkTables.addKeyListener('/SmartDashboard/Auto mode/options', (key, value) => {
     // Clear previous list
     while (ui.autoSelect.firstChild) {
         ui.autoSelect.removeChild(ui.autoSelect.firstChild);

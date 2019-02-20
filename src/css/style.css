@@ -72,13 +72,13 @@ header {
     bottom: 0;
     left: 0;
     width: 40%;    /*Percent of viewport*/
-    height: 80vh;
+    height: 70vh;
     overflow: hidden;
-    background-color: #333;
+    background-color: #222;
     /* You'll need to mess with this a bit to get your camera to work. Replace the url with a live-updating image feed from your camera. Using other camera streaming systems will require some tweaking. */
-    background-image: url('http://10.0.78.78:1182/stream.mjpg');
+    background-image: url('http://frcvision.local:1181/stream.mjpg');
     background-position: center; /* Center the image */
-    background-repeat: repeat; /* Do not repeat the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain;
     text-align: center;
 }
@@ -88,11 +88,11 @@ header {
     bottom: 0;
     left: 40%;
     width: 40%;    /*Percent of viewport*/
-    height: 80vh;
+    height: 70vh;
     overflow: hidden;
-    background-color: #333;
+    background-color: #222;
     /* You'll need to mess with this a bit to get your camera to work. Replace the url with a live-updating image feed from your camera. Using other camera streaming systems will require some tweaking. */
-    background-image: url('http://10.0.78.78:1181/stream.mjpg');
+    background-image: url('http://frcvision.local:1184/stream.mjpg');
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain;
@@ -152,6 +152,7 @@ aside {
     top: 0;
     width: 20vw;
     height: 100vh;
+    background-color: rgb(24, 46, 46);
 }
 aside > * {
     margin-bottom: 20px;

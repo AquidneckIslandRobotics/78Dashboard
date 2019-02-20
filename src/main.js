@@ -101,6 +101,7 @@ function createWindow() {
         // It's best if the dashboard takes up as much space as possible without covering the DriverStation application.
         // The window is closed until the python server is ready
         show: false,
+        frame: false,
         icon: __dirname + '/../images/icon.png'
     });
     // Move window to top (left) of screen.
